@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard | SkillSwap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container pb-5">
+    <div class="welcome">
+      <div>
+        <h1 id="hello">Hi there</h1>
+        <p class="mb-0 text-muted">Teach one session, earn one credit. Spend it learning anything.</p>
+      </div>
+      <div class="credit-box"><b id="credits">0</b><small>learning credits</small></div>
+    </div>
+
+    <div class="row g-3 mt-1">
+      <div class="col-6 col-lg-3"><div class="stat" style="background:#cfeee2"><small>Sessions taught</small><b id="sTaught">0</b></div></div>
+      <div class="col-6 col-lg-3"><div class="stat" style="background:#ffe7a8"><small>Sessions learned</small><b id="sLearned">0</b></div></div>
+      <div class="col-6 col-lg-3"><div class="stat" style="background:#e6dcfb"><small>Average rating</small><b id="sRating">0</b></div></div>
+      <div class="col-6 col-lg-3"><div class="stat" style="background:#ffdad3"><small>Verified skills</small><b id="sVerified">0</b></div></div>
+    </div>
+
+    <div class="row g-4 mt-1">
+      <div class="col-lg-6">
+        <div class="panel h-100">
+          <h3>Best matches for you</h3>
+          <div id="matches"><p class="text-muted">Loading...</p></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="panel h-100">
+          <h3>Upcoming sessions</h3>
+          <div id="upcoming"><p class="text-muted">Loading...</p></div>
+        </div>
+      </div>
+    </div>
+        <div class="row g-4 mt-1">
+      <div class="col-lg-7">
+        <div class="panel h-100">
+          <h3>Getting started</h3>
+          <div class="progress-track"><div id="progBar" class="progress-fill"></div></div>
+          <div id="checklist" class="mt-3"></div>
+        </div>
+      </div>
+      <div class="col-lg-5 d-flex flex-column gap-3">
+        <a href="skills.html" class="quick" style="background:#cfeee2">
+          <b>Add a skill</b><small>Teach what you know, get verified</small><span>→</span>
+        </a>
+        <a href="sessions.html" class="quick" style="background:#ffe7a8">
+          <b>Find a session</b><small>Book a slot and start learning</small><span>→</span>
+        </a>
+        <a href="sessions.html" class="quick" style="background:#e6dcfb">
+          <b>Create a slot</b><small>Set your availability and earn credits</small><span>→</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+# Backend dependencies
+backend/node_modules/
+
+# Environment secrets
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Log files
+*.log
+npm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# User data and uploaded proof files
+backend/data/
+backend/uploads/
